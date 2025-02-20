@@ -1,0 +1,97 @@
+<header></header>
+<h1 id = "title">Uncle Joe's Pizzaria</h1>
+  <p id = "description">Thanks for dining at Uncle Joe's tonight! Please share your feedback!</p>
+<link rel="stylesheet" href="Survey.css"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<form id = "survey-form" type = "text">
+  
+  <label id = "name-label">Name:
+	<input id = "name" type = "text" required placeholder = "Enter name"/>
+  </label>
+  
+  <label id = "email-label" >Email:
+	<input id = "email" type = "email" required placeholder = "Enter email"/>
+  </label>
+  
+  <label id = "number-label">Phone:
+  <select id = "dropdown">
+    <option>US (+1)</option>
+    <option>UK</option>
+  </select>
+  <input id = "number" type = "number" placeholder = "Enter number" min = "0000000000" max = "9999999999"/>
+  </label>
+  
+  <p class="border"></p>
+  
+  <h3>Rate your experience at Uncle Joe's</h3>
+  <label class="custom-radio">
+    <input type = "Radio" name="radio">
+	<span class = "radio-style"></span>
+	<p class = "label">5-stars</p>
+  </label>
+  
+  <label class="custom-radio">
+	<input type = "Radio" name="radio">
+	<span class = "radio-style"></span>
+	<p class = "label">4-stars</p>
+  </label>
+  
+  <label class="custom-radio">
+	<input type = "Radio" name="radio">
+	<span class = "radio-style"></span>
+	<p class = "label">3-stars</p>
+  </label>
+  
+  <label class="custom-radio">
+	<input type = "Radio" name="radio">
+	<span class = "radio-style"></span>
+	<p class = "label">2-stars</p>
+  </label>
+  
+  <label class="custom-radio">
+	<input type = "Radio" name="radio">
+	<span class = "radio-style"></span>
+	<p class = "label">1-star</p>
+  </label>
+  
+  <p class="border"></p>
+  
+  <h3>How did you hear about Uncle Joe's?</h3>
+  <label class="check">
+	<input type = "Checkbox" value = "0">
+	<span class = "custom-check"></span>
+	<p class = "label">Relative</p>
+	</label>
+  <label class="check">
+	<input type = "Checkbox" value = "0">
+	<span class = "custom-check"></span>
+	<p class = "label">Friend</p>
+	</label>
+  <label class="check">
+	<input type = "Checkbox" value = "0">
+	<span class = "custom-check"></span>
+	<p class = "label">Co-worker</p>
+	</label>
+  <label class="check">
+	<input type = "Checkbox" value = "0">
+	<span class = "custom-check"></span>
+	<p class = "label">Online</p>
+	</label>
+  <label class="check">
+	<input type = "Checkbox" value = "0">
+	<span class = "custom-check"></span>
+	<p class = "label">Newspaper</p>
+	</label>
+	<label class="check">
+	<input type = "Checkbox" value = "0">
+	<span class = "custom-check"></span>
+	<p class = "label">Other</p>
+	</label>
+
+	<p class="border"></p>
+	<h3>Please leave a comment about your experience!</h3>
+  <textarea placeholder="Please enter feedback!"> </textarea>
+  <input type = "submit" id = "submit"/>
+</form>
+<footer></footer>

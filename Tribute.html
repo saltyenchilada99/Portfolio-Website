@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="Tribute.css"/>
+	<header>
+		<a id="tribute-link" href="#childhood">Childhood</a>
+		<a id="tribute-link" href="#military" >Military</a>
+		<a id="tribute-link" href="#government">Government</a>
+		<a id="tribute-link" href="#cuba">Cuba</a>
+		<a id="tribute-link" href="#quote">Quote</a>
+		<a id="tribute-link" href="#last-p">Assassination</a>
+	</header>
+	
+	<p class ="header-picture">
+		<img src="C:\Website\John_F._Kennedy,_White_House_photo_portrait,_looking_up.jpg" class="outer"></img>
+		<img src="C:\Website\John_F._Kennedy,_White_House_photo_portrait,_looking_up.jpg" class="inner"/>
+	</p>
+	
+	<h1>John F Kennedy</h1>
+	<h2>(1917-1963)</h2>
+	<div class = "left reveal" id="childhood">
+		<div class="text-left">
+			<div class="section-header"><span>Childhood</span></div>
+			<p>John Fitzgerald Kennedy was born in Brookline Massachusetts on May 29 1917. He had eight siblings and went to Harvard University to study Government, earning his 
+			bachelor's of arts degree in 1940</p>
+		</div>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/TheKennedyFamily1.jpg" id="beach"/>
+	</div>
+	<div class = "right reveal" id="military">
+	<img src="https://assets.editorial.aetnd.com/uploads/2018/12/jfk-portrait_frank-turgeon-jr-_jfk-library_feautre.jpg?width=392&quality=75&auto=webp" id="navy"/>
+		<div class="text-right">
+			<div class="section-header"><span>Military</span></div>
+			<p>On September 24th 1941, two months before pearl harbor, John joined the United States Naval Reserve. In 1942, he completed
+			training at the Naval Reserve Officer Training School where he would eventually be assigned to active duty in the South Pacific.
+			He was awarded the Navy and Marines Corps Medal for his service and heroism</p>
+		</div>
+	</div>
+	
+	<div class = "left reveal" id="government">
+		<div class="text-left">
+			<div class="section-header"><span>Government</span></div>
+			<p>After the war, he decided to go into politics, winning his running district in the 1946 House of Representatives election.
+			Afterwards, he ran for senator in the 1952 election, beating senator incumbant Henry Cabot Lodge Jr. He eventually won the 1960 presidential election
+			against Richard Nixon, becoming the 35th president of the United States</p>
+		</div>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jfk_inauguration.jpg/330px-Jfk_inauguration.jpg" id="white-house"/>
+	</div>
+	
+	<div class = "right reveal" id="cuba">
+		<div class="text-right">
+			<div class="section-header"><span>Cuba</span></div>
+			<p>The president's first attempt to stop nuclear tensions in Cuba was an aggressive tactic that would go on to be known as
+			the Bay of Pigs invasion. The invasion attempt was unsuccessful leaving 114 soldiers dead and the rest imprisoned. Later in 1962
+			the Kennedy administration found out that nuclear missile sites were being built in Cuba, marking a high point in the cold war.
+			This would go on to be known as the Cuban Missile Crisis, consisting of naval tensions between Cuba and the United States. After
+			two weeks stalling, the U.S government made a deal with Cuba to dismantle the missile sites with the promise of the Cuba not being attacked
+			by its neighbor from the north
+			</p>
+		<img src="https://th.bing.com/th/id/OIP.Aai_fVjO8ylxSj5tzIKyGQHaE0?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="pigs"/>
+		</div>
+	</div>
+	
+	<div id="quote" class = "reveal">>
+		<blockquote>Those who make peaceful revolution impossible will make violent revolution inevitable.</blockquote>
+		<p class = "quote-author"> - John F Kennedy </p>
+		<img src="https://www.jfklibrary.org/sites/default/files/archives/JFKWHP/1962/Month%2003/Day%2006/JFKWHP-1962-03-06-C/JFKWHP-ST-93-1-62.jpg" id="quote-image">
+	</div>
+	
+	<div class = "right reveal" id="last-p">
+		<div class="text-right">
+			<div class="section-header"><span>Assassination</span></div>
+			<p> On November 22 1963, John visited Texas to settle political affairs. He was driving through Dallas on a limousine convertabile 
+			when he was shot once in the back and once in the head by Lee Harvey Oswald. Oswald was arrested, and killed several days later
+			</p>
+		</div>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/JFK_limousine.png/1280px-JFK_limousine.png" id="car"/>
+	</div>
+
+	<footer>
+		<h2>Sources:</h2>
+			<div>"John F. Kennedy." Wikipedia, 15 Oct. 2001, en.wikipedia.org/wiki/John_F._Kennedy. Accessed 20 Jun. 2024.<div>
+			<div>"John F. Kennedy." History.com, 29 Oct. 2009, www.history.com/topics/us-presidents/john-f-kennedy. Accessed 20 Jun. 2024.<div>
+	</footer>
+	
+	<script type = "text/javascript">
+		window.addEventListener('scroll', reveal);
+		
+		function reveal(){
+			var reveals = document.querySelectorAll('.reveal');
+			
+			for(var i = 0; i < reveals.length; i++){
+				var windowHeight = window.innerHeight;
+				var revealTop = reveals[i].getBoundingClientRect().top;
+				var revealPoint = 150;
+				
+				if(revealTop < windowHeight - revealPoint){
+					reveals[i].classList.add('active');
+				} else {
+					reveals[i].classList.remove('active');
+				}
+			}
+		}
+	</script>
+	
+</html>

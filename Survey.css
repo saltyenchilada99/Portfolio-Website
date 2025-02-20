@@ -1,0 +1,155 @@
+html{
+  background-color: maroon;
+}
+header, footer{
+  height: 35%;
+  width: auto;
+  background-image: url(https://th.bing.com/th/id/R.de21653a2e7b830715cc093adfa02912?rik=IKlNbU5%2fgmtUEA&pid=ImgRaw&r=0);
+  margin: -7px;
+}
+
+h3, h1, p, #name-label, #email-label, #number-label, .check, #submit{
+  color: white;
+  font-family: cursive;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+}
+#name, #email, #number{
+  width:175px;
+  margin-bottom: 0.8rem;
+  background-color: #090139;
+  color: white;
+}
+#dropdown{
+  width: 50px;
+  background-color: #090139;
+  color: gray;
+}
+#dropdown, #number-labeled{
+  flex-wrap: wrap;
+}
+.custom-radio{
+	position: relative;
+	margin-left: 25px;
+	width: 10%;
+}
+/* Removes original radio*/
+.custom-radio input{
+	opacity: 0;
+	position: absolute;
+	cursor: pointer;
+	height: 0px;
+	width: 0px;
+}
+.radio-style{
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	top: 17.5;
+	left: -20;
+	background-color: #090139;
+	border-radius: 100% 100% 100% 100%;
+	border: gray 2px solid;
+}
+.custom-radio:hover input ~ .radio-style
+{
+	background-color: gray;
+}
+.label{
+	margin-left: 5px;
+}
+.radio-style:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-radio input:checked ~ .radio-style:after {
+  display: block;
+}
+
+.custom-radio .radio-style:after{
+	height: 12.5px;
+	width: 12.5px;
+	top: 1.25px;
+	left: 1.25px;
+	justify-items: center;
+	border-radius: 100%;
+	background-color: white;
+}
+
+.border{
+	width: auto;
+	height: 25px;
+	background-image: url("https://th.bing.com/th/id/OIP.VY_N1WFMdDvaaGXoja1MMwHaHa?rs=1&pid=ImgDetMain");
+	margin-left: -7px;
+	margin-right: -7px;
+}
+
+textarea{
+	width: 40%;
+	height: 75px;
+	background-color: #090139;
+	color: white;
+}
+
+#submit{
+	width: 40%;
+	height: 50px;
+	background-color: #090139;
+}
+
+.check{
+	position: relative;
+	margin-left: 25px;
+	width: 10%;
+}
+
+.check input{
+	opacity: 0;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	cursor: pointer;
+}
+
+.custom-check{
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	top: 17.5;
+	left: -20;
+	background-color: #090139;
+	border: gray 2px solid;
+}
+
+.check:hover input ~ .custom-check
+{
+	background-color: gray;
+}
+
+.custom-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check input:checked ~ .custom-check:after {
+  display: block;
+}
+
+.check .custom-check:after{
+	height: 10px;
+	width: 4px;
+	top: auto;
+	left: 3.5;
+	justify-items: center;
+	border-width: 0px 3.5px 3.5px 0px;
+	border-color: white;
+	border-style: solid;
+	transform: rotate(45deg);
+
+}

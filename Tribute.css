@@ -1,0 +1,190 @@
+html{
+	background-color: black;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	background-color: #18556B;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 3rem;
+	z-index: 5;
+	margin-top: -1rem;
+	margin-left: -3rem;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+}
+
+a:hover
+{
+	background-color: white;
+	color: red;
+}
+
+.header-picture > .outer{
+	position: relative;
+	display: block;
+	margin: 8rem auto;
+	height: 750px;
+	opacity: 0.25;
+}
+
+.header-picture > .inner{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 240px;
+	height: 600px;
+	box-shadow: 10px 10px 20px #ffbb73
+}
+h1, h2{
+	color: white;
+	text-align: center;
+	margin-top: -7.5rem;
+}
+
+h2{
+	margin-top: -20px;
+}
+
+p{
+	color: white;
+	font-size: 25px;
+	margin: auto;
+	padding: 2rem;
+}
+
+.text-left{
+	width: 60%;
+	border: red solid 4px;
+	border-radius: 7.5%;
+	display: flex;
+	margin-top: 7.5em;
+	
+}
+
+.section-header{
+	color: white;
+	font-size: 40px;
+	font-style: bold;
+	margin-top: -0.6em;
+	margin-left: 0.6em;
+}
+
+span{
+	background-color: black;
+}
+
+#beach{
+	position: absolute;
+	left: 65%;
+	top: auto;
+	width: 33%;
+	box-shadow: 10px 10px 20px #ffbb73
+}
+
+.left, .right{
+	display: flex;
+	padding-top: 10rem;
+}
+
+.text-right{
+	width: 60%;
+	display: flex;
+	border: red solid 4px;
+	border-radius: 7.5%;
+	margin-top: 7.5em;
+	margin-left: auto;
+}
+
+#navy
+{
+	position: absolute;
+	margin-top: 8.5em;
+	margin-right: auto;
+	width: 35%;
+	box-shadow: 10px 10px 20px #ffbb73
+}
+
+
+#white-house{
+	position: absolute;
+	left: 65%;
+	top: auto%;
+	margin-top: 3em;
+	width: 33%;
+	box-shadow: 10px 10px 20px #ffbb73
+}
+
+blockquote{
+	color: white;
+	font-size: 45px;
+}
+
+#quote{
+	margin: 15em 0;
+	padding-top: 22.5rem;
+}
+
+blockquote::before {
+  content: '" ';
+}
+
+blockquote::after {
+  content: ' "';
+}
+
+#pigs
+{
+	position: absolute;
+	top: auto;
+	left: 2.5%;
+	width: 35%;
+	box-shadow: 10px 10px 20px #ffbb73;
+}
+
+#quote-image
+{
+	position: relative;
+	top: -40rem;
+	left: 45%;
+	width: 50%;
+	opacity: 0.25;
+	margin-bottom: -50em;
+}
+
+
+#car{
+	position: absolute;
+	top: auto;
+	left: 2.5%;
+	width: 35%;
+	box-shadow: 10px 10px 20px #ffbb73;
+}
+
+#last-p
+{
+	margin-bottom: 15em;
+}
+
+footer{
+	background-color: #18556B;
+	padding: 3rem;
+}
+
+.reveal{
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: all 2s ease;
+}
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+}

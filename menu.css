@@ -1,0 +1,109 @@
+html{
+	background-color: #F3E4CF;
+}
+
+p,h1{
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+	text-align: center;
+}
+
+p,h2{
+	margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+.heading-background{
+	padding: 1.5em;
+	background: rgba(131, 251, 255, 0.5);
+	margin-top: 1.2em;
+}
+p{
+	font-size: 18px;
+	line-height: 30px;
+	margin-top:2em;
+}
+
+.triangle{
+	width: 50px;
+	height: 100px;
+	color:red;
+	clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+	z-index:2;
+}
+
+a{
+	text-decoration: none;
+	text-align: center;
+}
+
+.project-link{
+	border: solid, gold, 4px;
+	background-color: #8f6afe;
+	width: 15%;
+	padding: 2em;
+	margin: 1.5em auto;
+	color: black;
+}
+
+.project-link:hover{
+	background-color: rgba(247, 151, 210, 0.753);
+}
+
+span{
+	width: 70%;
+	border: 5px red;
+}
+
+#sub-section{
+	margin-top: 3em;
+}
+
+#self-pic{
+	display: block;
+	height: 20rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social-links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center; /*matches github logo with linkedin logo*/
+}
+
+
+	
+#github{
+	height: 12em;
+	padding: none;
+	
+}
+
+#linkedin {
+	height: 18em;
+}
+@keyframes highlight {
+	from {box-shadow: none;}
+	to {box-shadow: -10px -10px 20px red;}
+}
+
+#github:hover {
+	height: 13em;
+	animation-name: highlight;
+	animation-duration: 2s;	
+}
+
+#linkedin:hover{
+	height: 19em;
+	animation-name: highlight;
+	animation-duration: 2s;	
+}
+

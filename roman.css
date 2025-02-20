@@ -1,0 +1,58 @@
+html{
+  background: #3BF8F5;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Fascinate Inline";
+  font-size: 5em;
+  margin-bottom: 0.25em;
+}
+
+p{
+  font-family: "Fascinate Inline";
+  font-size: 2em;
+  margin: auto;
+}
+
+#number{
+  width: 20%;
+  background-color:#0965F9;
+  color: #F9AA6C;
+  font-size: 2em;
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+
+button{
+  height: 4em;
+  width: 20em;
+  background-color: #0965F9;
+  margin-bottom: 2em;
+}
+
+button:hover{
+  background-color: #FC97D6;
+  cursor: pointer;
+}
+
+
+#output{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Fascinate Inline";
+  font-size: 2em;
+  color: #0965F9;
+  border: 10px dotted red;
+  height: 5em;
+  width: 10em;
+}
+
+
