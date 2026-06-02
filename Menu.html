@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<link rel="stylesheet" href="menu.css">
+	<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+	<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<a href="#" class="logo">Portfolio</a>
+		<nav class="navbar">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1><span class="text"></span></h1>
+			<p class="welcome-text">Welcome to my portfolio! Here, you can explore a collection of my projects, skills,
+				and experiences. Feel free to browse through the different sections to learn more about me and my work.
+			</p>
+			<div class="home-sci">
+				<a href="https://www.linkedin.com/in/matthew-weber03" style="--i:7"><i class="bxl bx-linkedin"></i></a>
+				<a href="https://github.com/saltyenchilada99" style="--i:8"><i class="bxl bx-github"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="about-img"><i class="bx bx-code-alt"></i></div>
+		<div class="about-text">
+			<h2>About Me</h2>
+			<h4>Full Stack Devloper</h4>
+			<p>I graduated from the Bloomsburg University of Pennsylvania with a Bachelors in Computer Science, as well
+				as a minor in Mathematics. I have experience in full-stack development, database management, data
+				analytics,
+				web development, and machine learning throughout courses, proctored research projects, and internships.
+				My passion is building projects that enable businesses and clients to achieve technological advancements
+				with
+				better efficiency and automation.
+			</p>
+		</div>
+	</section>
+
+	<section>
+		<div id="experience">
+			<div class="main-text">
+				<h2>Experiences</h2>
+				<div class="experience-content">
+					<div class="row">
+						<img src="C:\Website\h&k logo.png"/>
+						<div class="layer">
+							<h6>H&K Group (May 2024 - Aug 2024)</h6>
+							<p>Led the company's efforts to design an operator's manual for their Easton Block & Supply location.
+								Manual consisted of standard operating procedures on machinary that is a sole provider for the tristate
+								area's source of cement blocks. The manual was designed to lower the barrier of entry for new employees.
+								Two editions were created of this manual: a physical edition through Microsoft Office, and a digital edition
+								through web development.
+							</p>
+							<a href="https://www.hkgroup.com/"></a>
+						</div>
+					</div>
+					<div class="row">
+						<img src="C:\Website\sekisui-logo.jpg"/>
+						<div class="layer">
+							<h6>Sekisui Kydex (May 2025 - Jan 2026)</h6>
+							<p>Managed, fixed, cleaned, and improved the company's database, data migration and automation, and the
+								application's UIs used by the company's Extruder Operators. Pioneered the company's project to automate
+								HubSpot email campaigns through automatic data migration from the company's database application to
+								the company's custom email templates in their CRM.
+							</p>
+							<a href="https://kydex.com/"></a>
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class=contact-text>
+			<h2>Contact <span>Me</span></h2>
+			<h4>Let's keep in touch!</h4>
+			<p>If you feel like my qualifications match what your company is looking for, or if you have any
+				questions/concerns regarding my qualifications, feel free to reach out</p>
+			<div class="contact-list">
+				<div class="contact-item"><i class="bx bx-send-alt bx-rotate-315"></i>
+					<li>matthew_weber03@yahoo.com</li>
+				</div>
+				<div class="contact-item"><i class="bx bx-phone bx-rotate-45"></i>
+					<li>610-297-2682</li>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form action="">
+				<input type="text" placeholder="Your Name" class="contact-form-control" id="name">
+				<input type="email" placeholder="Your Email" class="contact-form-control" id="email">
+				<input type="text" placeholder="Your Subject" class="contact-form-control" id="subject">
+				<textarea cols="40" rows="10" placeholder="Your Message" class="contact-form-control" id="text"></textarea>
+				<input type="submit" value="Send Message" class="contact-form-btn" id="submit">
+			</form>
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script src="menu.js"></script>
+</body>
+
+</html>
